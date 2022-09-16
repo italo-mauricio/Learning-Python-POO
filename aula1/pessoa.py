@@ -9,6 +9,10 @@ class Pessoa:
     def anothermethod(self):
         print(self.nome)
         print(self.idade)
+
+    def comer(self):
+        print(f'{self.nome} está comendo.')
+        self.comendo = True
          
           
         
