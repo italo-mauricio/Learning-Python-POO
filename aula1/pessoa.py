@@ -14,8 +14,15 @@ class Pessoa:
         print(f'e tem {self.idade} anos')
 
     def comer(self, alimento):
+        if self.comendo:
+            print(f'{self.nome} já está comendo.')
+            return
+        
         print(f'{self.nome} está comendo {alimento}.')
         self.comendo = True
+        
+        
+    
          
           
         
