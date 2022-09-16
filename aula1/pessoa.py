@@ -3,5 +3,12 @@ class Pessoa:
         self.nome = nome
         self.idade = idade
         self.comendo = comendo
-        self.falando = falando  
+        self.falando = falando 
+        
+        
+    def anothermethod(self):
+        print(self.nome)
+        print(self.idade)
+         
+          
         
