@@ -18,5 +18,7 @@ class Pessoa:
         idade = cls.ano_atual - ano_nascimento 
         return cls(nome, idade)
         
-p1 = Pessoa('Italo', 32)
-p2 = Pessoa('Pedro', 23)
+p1 = Pessoa.por_ano_nascimento('Italo', 1998)
+print(p1)
+print(p1.nome, p1.idade)
+p1.get_ano_nascimento()
