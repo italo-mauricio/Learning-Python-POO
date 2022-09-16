@@ -14,7 +14,7 @@ class Pessoa:
             print(f'{self.nome} já está falando')
             return
         
-        print(f'{self.nome} esta falando')
+        print(f'{self.nome} esta falando sobre {assunto}')
         self.falando = True
     
     def anothermethod(self):
