@@ -6,7 +6,16 @@ class Pessoa:
         self.comendo = comendo
         self.falando = falando
 
+    def falar(self, assunto):
+        if self.comendo:
+            print(f'{self.nome} não pode falar comendo')
+            return
+        if self.falando:
+            print(f'{self.nome} já está falando')
+            return
         
+        print(f'{self.nome} esta falando')
+        self.falando = True
     
     def anothermethod(self):
         print(f'O ano é {self.ano}')
