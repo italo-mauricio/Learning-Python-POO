@@ -1,9 +1,6 @@
 from pessoa import Pessoa
 
 
-
-
-
 p2 = Pessoa ('pedro', 23 , 2022)
 p3 = Pessoa ('italo', 24, 2022)
 #p2.anothermethod()

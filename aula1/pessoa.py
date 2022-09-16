@@ -3,12 +3,15 @@ from datetime import datetime
 
 class Pessoa:
     ano_atual = int(datetime.strftime(datetime.now(), '%Y'))
+    
+    
     def __init__(self,nome, idade, ano, comendo=False, falando=False):
         self.nome = nome
         self.idade = idade
         self.ano = ano  
         self.comendo = comendo
         self.falando = falando
+
 
     def falar(self, assunto):
         if self.comendo:
@@ -21,6 +24,7 @@ class Pessoa:
         print(f'{self.nome} esta falando sobre {assunto}')
         self.falando = True
     
+    
     def parar_falar(self):
         if not self.falando:
             print(f'{self.nome} não está falando')
@@ -28,10 +32,12 @@ class Pessoa:
         print(f'{self.nome} parou de falar')
         self.falando = False
     
+    
     def anothermethod(self):
         print(f'O ano é {self.ano}')
         print(f'ele se chama {self.nome}')
         print(f'e tem {self.idade} anos')
+
 
     def comer(self, alimento):
         if self.comendo:
@@ -45,6 +51,7 @@ class Pessoa:
         print(f'{self.nome} está comendo {alimento}.')
         self.comendo = True
         
+        
     def parar_comer(self):
         if not self.comendo:
             print(f"{self.nome} não está comendo")
@@ -52,6 +59,7 @@ class Pessoa:
     
         print(f'{self.nome} parou de comer')
         self.comendo = False
+        
         
     def ano_nascimento(self):
         return self.ano_atual - self.idade
