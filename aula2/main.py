@@ -14,11 +14,11 @@ class Pessoa:
         
         
     @classmethod    # método de classe
-    def por_ano_nascimento(cls, nome, ano_nascimento):
+    def por_ano_nascimento(cls, nome, ano_nascimento): # Precisa estar decorado com o class metodh e não é referente a instância.
         idade = cls.ano_atual - ano_nascimento 
         return cls(nome, idade)
     
-    @staticmethod
+    @staticmethod 
     def gera_id():
         rand = randint(10000, 19999)
         return rand
