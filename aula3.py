@@ -16,7 +16,7 @@ class Produto:
     
     @nome.setter
     def nome(self,valor):
-        self._nome = valor
+        self._nome = valor # replace() = altera a letra, lower() = deixa a primeira letra minuscula, title() = deixa a primeira letra maiuscula
     
     
     @property
