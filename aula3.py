@@ -9,3 +9,11 @@ class Produto:
     def desconto(self, percentual):
         self.preco = self.preco - (self.preco *(percentual / 100))
         
+        
+p1 = Produto('camisa', 50)
+p1.desconto(10)
+print(p1.preco)
+
+p2 = Produto('sapato', 15)
+p2.desconto(10)
+print(p2.preco)
