@@ -10,6 +10,14 @@ class Produto:
         self.preco = self.preco - (self.preco *(percentual / 100))
         
     # Getter
+    @property
+    def nome(self):
+        return self._nome
+    
+    @nome.setter
+    def nome(self,valor):
+        self._nome = valor
+    
     
     @property
     def preco(self):
@@ -29,8 +37,8 @@ class Produto:
         
 p1 = Produto('camisa', 50)
 p1.desconto(10)
-print(p1.preco)
+print(p1.nome, p1.preco)
 
-p2 = Produto('sapato', 'R$15')
+p2 = Produto('sapato', 'R$15') # o replace pode dar conflito se alterar essa sring adicionando espaços, ou pontos
 p2.desconto(10)
-print(p2.preco)
+print(p2.nome, p2.preco)
